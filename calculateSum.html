@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id ="block1" onclick="javascript:onBlockClick(event)"
+    style="background-color: blue;">
+        Block1
+    </div>
+    <div id ="block2">Block2</div>
+    <div id ="block3">Block3</div>
+
+    <input type="text" id="num1" />
+    <input type="text" id="num2"/>
+    <div id="result"></div>
+    
+
+    <script src = "./calculateSum.js"></script>
+    <script>
+        function onBlockClick(e){
+            alert("버튼 클릭1");
+            console.log(e);
+        }
+        function onChangeInput(e){
+            console.log(e.data);
+        }
+
+        var inputNum1 = document.getElementById("num1");
+        var inputNum2 = document.getElementById("num2");
+        var resultDisplay = document.getElementById("result");
+        
+        inputNum1.addEventListener('input', calculateSum);
+        inputNum2.addEventListener('input', calculateSum);
+        
+    </script>
+</body>
+</html>
