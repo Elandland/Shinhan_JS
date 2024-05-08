@@ -21,7 +21,7 @@ axios.get('https://example.com').then(resp=>{
     const values = ptag.map((i,elem)=>{
         return $(elem).text();
     });
-
+    console.log(values);
 
     const data2 = [];
     for (let i=0; i<ptag.length; i++){
