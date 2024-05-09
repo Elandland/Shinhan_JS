@@ -11,7 +11,6 @@ async function main(){
         is_sug_officeid:0,
         mynews:0,
         nqx_theme:{"theme":{"main":{"name":"encyclopedia","score":"0.895011"}}},
-        nso:'&nso=so:r,p:all,a:all',
         office_category:0,
         office_section_code:0,
         office_type:0,
