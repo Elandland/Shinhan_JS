@@ -42,3 +42,13 @@ export default function CountComponent() {
     }
 
     //useEffect의 return값은 함수 인데. 얘는 다시 함수를 호출하거나 마운트가 내려갈때까지 안나옴
+
+
+    
+    // useEffect(()=>{
+    //     const intervalId = setInterval(()=>{
+    //         console.log("호출");
+    //         setShowText(!showText);
+    //     }, 3000);
+    //     return ()=>{clearInterval(intervalId);}
+    // }, []);
