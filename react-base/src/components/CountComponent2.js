@@ -5,7 +5,7 @@ export default function CountComponent2(){
 
     const addCount = useCallback((count)=>{
         setCount(count);
-    },[setCount])
+    },[setCount])           //디펜던시 바뀌면 callback함수를 반환하겠다.
 
     return(
         <div>

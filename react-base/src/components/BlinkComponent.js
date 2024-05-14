@@ -11,7 +11,7 @@ export default function BlinkCompnent({ text }) {
         const timeoutId = setInterval(() => {
             setShowText(showText => {return !showText});
         }, 1000)
-        return () => { clearInterval(timeoutId) }       //이거안하면 interveal이 해제가 안되서 계속 쌓임?
+        return () => { clearInterval(timeoutId) }       //이거안하면 interveal이 해제가 안되서 계속 쌓임? 그래서 clear를 해주는듯?
     }, [])
     return (
         <div>

@@ -79,8 +79,8 @@ export default function PrimeCalculator(props){
     }
     return(
         <div>
-                {count}
-                <button onClick ={addCount}>카운트 증가</button>
+            {count}
+            <button onClick ={addCount}>카운트 증가</button>
             <input type="number"
             value = {limit}
             onChange ={(e) => setLimit(Number(e.target.value))}

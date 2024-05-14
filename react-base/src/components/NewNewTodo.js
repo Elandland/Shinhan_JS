@@ -17,7 +17,7 @@ export default function TodoApp(){
             <div>
                 <input 
                     type="text" 
-                    style={{backgroundColor: activeColor}} 
+                    style={{backgroundColor: activeColor }} 
                 />
                 <button >입력</button>
             </div>

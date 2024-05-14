@@ -1,3 +1,21 @@
+// import { ThemeProvider } from './components/ThemeProvider'
+// import MyPage from './components/Mypage'
+// import ThemeButton from './components/ThemeButton'
+// import "bootstrap/dist/css/bootstrap.min.css"
+// import Button from 'react-bootstrap/Button';
+
+// export default function App() {
+//   return (
+//     <ThemeProvider>
+//       <Button variant ="primary">기본</Button>
+//       <Button variant ="danger">기본</Button>
+//       <Button variant ="info">기본</Button>
+//       <MyPage />
+//       <ThemeButton />
+//     </ThemeProvider>
+//   )
+// }
+
 import logo from './logo.svg';
 //import './App.css';
 
@@ -6,7 +24,7 @@ import CaptionImage from './components/CaptionImage';
 import BlinkCompnent from './components/BlinkComponent';
 import CBlinkComponent from './components/CBlinkComponent';
 import CountComponent from './components/CountComponent';
-import {useState} from "react";
+import { useState } from "react";
 import ResisterInputButton from './components/ResisterInputButton';
 import FocusInputButton from './components/ResisterInputButton';
 import PrimeCalculator from './components/PrimeCalculator';
@@ -14,6 +32,7 @@ import CountComponent2 from './components/CountComponent2';
 import Todo from './components/Todo';
 import NewTodo from './components/NewTodo';
 import NewNewTodo from './components/NewNewTodo';
+import Sep_Todo from './Todo/Sep_Todo';
 
 // function App() {
 //   const [showCount,setShowCount] = useState(true);
@@ -34,14 +53,16 @@ import NewNewTodo from './components/NewNewTodo';
 //   );
 // }
 
-export default function App(){
-  return(
+export default function App() {
+  return (
     <div>
       {/* <FocusInputButton/> */}
       {/* <PrimeCalculator text={10}/> */}
       {/* <CountComponent2/> */}
-      <NewTodo/>
+      {/* <NewTodo/> */}
       {/* <NewNewTodo/> */}
+      <Sep_Todo />
     </div>
+
   )
 }
